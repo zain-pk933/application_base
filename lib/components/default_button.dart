@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../config/constants.dart';
-import '../config/size_config.dart';
 
 class DefaultButton extends StatelessWidget {
   const DefaultButton({
@@ -27,7 +26,7 @@ class DefaultButton extends StatelessWidget {
         onPressed: press as void Function()?,
         child: Text(
           text!,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 18, //getProportionateScreenWidth(18),
             color: Colors.white,
           ),
